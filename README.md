@@ -45,4 +45,9 @@ To view all packages and dependencies used, check out the [Versions](versions/ve
 
 ---
 
+->npx vercel
+->vercel env pull .
+
+---
+
 Thank you for being part of this journey, and happy coding! 😊
