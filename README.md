@@ -39,14 +39,46 @@ This project is built using:
 - **React Query**: For efficient data fetching and caching.
 - **Vercel Postgres**: Reliable, scalable database solution.
 
+## 🔄 Deploy to Vercel
+
+To deploy this project to Vercel, follow these steps:
+
+### 1. Add Environment Variables
+
+After deploying, navigate to **Vercel > Project Settings > Environment Variables** and add the necessary environment variables for production.
+
+Replace all occurrences of `localhost` with your Vercel domain URL, as shown below:
+
+```plaintext
+KINDE_SITE_URL=https://cvbuild-ai.vercel.app/
+KINDE_POST_LOGOUT_REDIRECT_URL=https://cvbuild-ai.vercel.app/
+KINDE_POST_LOGIN_REDIRECT_URL=https://cvbuild-ai.vercel.app/dashboard
+NEXT_PUBLIC_APP_URL=https://cvbuild-ai.vercel.app/
+```
+
+These variables ensure that the app functions properly on your Vercel deployment.
+
+### 2. Initialize and Deploy
+
+Run the following command to initialize the deployment:
+
+```bash
+vercel
+```
+
+This command will prompt you to configure the project for the first time if it hasn't been linked to Vercel.
+
+Once configured, deploy the project to production using:
+
+```bash
+vercel --prod
+```
+
+This will push your latest changes live on Vercel.
+
 ## 🔍 Versions & Packages
 
 To view all packages and dependencies used, check out the [Versions](versions/version.md) file.
-
----
-
-->npx vercel
-->vercel env pull .
 
 ---
 
