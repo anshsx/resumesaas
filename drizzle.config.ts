@@ -5,7 +5,7 @@ export default defineConfig({
   out: "./drizzle",
   dialect: "postgresql",
   dbCredentials: {
-    url: process.env.POSTGRES_URL!,
+    url: postgres://default:d87gIZRkmMOD@ep-shiny-wildflower-a4h2zy7m-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require,
   },
   verbose: true,
   strict: true,
